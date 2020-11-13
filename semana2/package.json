@@ -1,0 +1,15 @@
+{
+  "name": "tech-semana2",
+  "version": "0.0.1",
+  "description": "This is just an example",
+  "scripts": {
+    "test:unit": "npx mocha test.js",
+    "test:figura": "npx mocha index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
