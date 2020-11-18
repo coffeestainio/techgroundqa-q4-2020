@@ -1,0 +1,8 @@
+npm init ( -> crear el pckage.json)
+npm install --save-dev webdriverio
+
+
+1) Ir a webdriver.io
+2) Hacer click en versions
+3) Obtener e imprimir la ultima 
+fecha de modificacion

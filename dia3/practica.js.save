@@ -1,0 +1,25 @@
+const { remote } = require('webdriverio');
+
+(async () => {
+    const browser = await remote({
+        capabilities: {
+            browserName: 'chrome',
+  	    'goog:chromeOptions': {
+        	// to run chrome headless the following flags are required
+        	// (see https://developers.google.com/web/updates/2017/04/headless-chrome)
+        	 args: ['--headless', '--disable-gpu'],
+        	}
+        },
+    })
+
+    await browser.url('https://webdriver.io');
+    title = await browser.$('=Versions');
+    title.click();
+    lastUpdated = 
+    console.log('This is the last version: ', await browser.$('.docLastUpdate em').getText());
+
+ 
+    await browser.deleteSession();
+
+ 
+})().catch((e) => console.error(e));
