@@ -1,0 +1,9 @@
+inicializar npm
+instalar @wdio/cli
+configurarlo con:
+    - mocha
+    - chromedriver
+    - crear todos los objetos
+
+adpatar los tests a la pagina de https://www.saucedemo.com/
+
