@@ -8,7 +8,7 @@ const { remote } = require('webdriverio');
         },
     })
 
-    await browser.url('https://develop.terapeutica.digital');
+    browser.url('https://develop.terapeutica.digital');
     
     const barraBusqueda = await browser.$('#search-input');
     await barraBusqueda.click();

@@ -1,0 +1,12 @@
+inicialiar el npm
+`npm init`
+
+instalar wdio-cli
+`npm install --save-dev @wdio/cli`
+
+inicializar la configuration
+`npx wdio`
+
+correr el test de ejemplo
+`npx wdio`
+
