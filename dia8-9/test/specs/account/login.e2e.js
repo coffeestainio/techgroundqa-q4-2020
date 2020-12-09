@@ -6,10 +6,6 @@ const LoginPage = require('../../pageobjects/login.page');
 
 describe('Login Feature', () => {
 
-    before( () =>{
-        
-    })
-
     beforeEach( () => {
         browser.reloadSession();
         LoginPage.open();

@@ -32,6 +32,9 @@ exports.config = {
         ],
         account: [
             './test/specs/account/*.e2e.js',
+        ],
+        cart: [
+            './test/specs/cart/*.e2e.js',
         ]
     },
     //
