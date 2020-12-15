@@ -18,8 +18,11 @@ describe('Login Feature', () => {
         let testData = defaultUser();
         testData.email = 'incorrect@email.com';
 
+        maxAllowedItesmOnPage  = 6
+
         LoginPage.login(testData);      
-        expect(LoginPage.alertError).toHaveText(errorMessage);
+        expect(LoginPage.alertError).toHaveText("Hola");
+        expect(LoginPage.container).ToHaveAmoutOfChild(maxAllowedItesmOnPage);
     });
 
     it('try to login with valid credentials', () => {
